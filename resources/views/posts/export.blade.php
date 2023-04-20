@@ -4,9 +4,9 @@
 @endsection
 @section('content')
     <section class="text-center">
-        <h4 class="mt-4">Choose dates for posts filtering and file type</h4>
+        <h4 class="mt-4 px-4">Choose dates for posts filtering and file type</h4>
         <form action="{{ route('posts.download') }}" method="get" class="w-75 mx-auto mt-4">
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between align-items-end">
                 <div class="w-25">
                     <label for="start" class="pb-2">Start date</label>
                     <input required type="date" class="form-control" id="start" name="start_date">
