@@ -36,7 +36,7 @@
         <footer class="d-flex justify-content-between align-items-center mt-2">
             <form method="GET" action="{{ route('posts.index') }}">
                 <select class="form-select mb-3" name="per_page" onchange="this.form.submit()">
-                    @php($currentPerPage = request()->query('per_page') ?: 10)
+                    @php($currentPerPage = request()->query('per_page') ?: '10')
                     <option selected value="{{ $currentPerPage }}">{{ $currentPerPage }}</option>
                     @php($optionPerPage = $currentPerPage === '10' ? '20' : '10')
                     <option value="{{ $optionPerPage }}">{{ $optionPerPage }}</option>
