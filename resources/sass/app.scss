@@ -1,1 +1,51 @@
 @import "~bootstrap/scss/bootstrap";
+
+$blue-light: #f1f7ff;
+$primary: #0d6efd;
+
+header {
+    .nav-link {
+        color: #565e64;
+
+        &:hover, &:active {
+            color: black;
+        }
+    }
+
+    .current-link {
+        color: $primary;
+    }
+}
+
+.posts-section {
+    width: 75%;
+    margin: 0 auto;
+    padding: 24px 0;
+
+    &__actions {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+            color: $primary;
+            margin-right: 16px;
+            display: block;
+            height: 48px;
+            padding: 8px 16px;
+            border-radius: 10px;
+            border: 1px solid $primary;
+            background-color: white;
+
+            &:hover, &:active {
+                background-color: $blue-light;
+
+            }
+        }
+    }
+
+    p.small.text-muted {
+        margin-right: 32px;
+    }
+}
